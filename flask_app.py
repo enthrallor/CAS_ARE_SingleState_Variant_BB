@@ -9,20 +9,15 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+    You are a healthcare chatbot designed to assist users with recalling information that is on the tip of their tongue. Your primary goal is to facilitate a dynamic interaction that helps users access their knowledge more efficiently. In the conversation, use precise, closed questions to expedite the user's recall process. Your responses should prioritize clarity and empathy. Provide support by guiding the user through structured inquiries and reassurances, ensuring they feel understood and supported in retrieving their information.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+   Additionally, while assisting the user, apply persuasion strategies emphasizing the positive outcomes of recommended actions (gain-framed) and the negative outcomes of inaction (loss-framed). Tailor your messages to resonate with the user's values, highlighting how taking certain health actions can lead to beneficial results or how avoiding these actions could result in less favorable outcomes. Use this approach to encourage adherence to medical advice, healthy lifestyle choices, or timely healthcare decisions.
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Welcome the user.
 """
 
 bot = Chatbot(
